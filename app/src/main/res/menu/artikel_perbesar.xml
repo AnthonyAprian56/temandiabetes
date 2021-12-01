@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/simpan"
+        android:icon="@drawable/ic_simpan"
+        android:title="Simpan"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/perbesar"
+        android:icon="@drawable/ic_size"
+        android:title="Perbesar"
+        app:showAsAction="ifRoom|withText">
+
+        <menu>
+            <item
+                android:id="@+id/teks_kecil"
+                android:title="Teks Kecil"/>
+            <item
+                android:id="@+id/teks_sedang"
+                android:title="Teks Sedang"/>
+            <item
+                android:id="@+id/teks_besar"
+                android:title="Teks Besar"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

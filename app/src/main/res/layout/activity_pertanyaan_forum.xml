@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PertanyaanForumActivity"
+    android:background="#EFF1FD">
+
+    <ImageView
+        android:id="@+id/foto_profil3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nama_profil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foto_profil3"
+        android:text="Nama Pengguna"
+        android:textSize="24sp"
+        android:fontFamily="@font/calibri_bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/jenis_pemeriksaan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nama_profil1"
+        android:layout_marginBottom="30dp"
+        android:text="Jenis Pemeriksaan"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri_bold"
+        android:textSize="20sp" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview5"
+        android:layout_below="@+id/jenis_pemeriksaan1"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+
+</RelativeLayout>

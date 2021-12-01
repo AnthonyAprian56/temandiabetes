@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObatFragment"
+    android:background="#EFF1FD">
+
+    <RelativeLayout
+        android:id="@+id/layout_pencarian_belanja"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/pencariaan_belanja"
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawableStart="@drawable/search2"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/kotak"
+            android:elevation="5dp"
+            android:hint="Bingung ? silahkan cari barang disini...."
+            android:imeOptions="actionSearch"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+
+    <!-- Grid Layout untuk Menu Utama -->
+    <GridLayout
+        android:layout_below="@+id/layout_pencarian_belanja"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="80dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_obat1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="13dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="50dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:maxWidth="120dp"
+                    android:maxHeight="100dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/obat_1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DNURSE SINOCARE TWIST\nLANCET 28G BOX 50PCS"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/calibri_regular"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.32,800.000"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/calibri_bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_obat2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="50dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:maxWidth="120dp"
+                    android:maxHeight="100dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/obat_4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="DIABETADEX STRIP 6 KAPSUL"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Rp.138,000.00"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/calibri_bold"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+    <!-- Grid Layout untuk Menu Utama -->
+
+
+    <!-- Navigasi Bawah / Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:elevation="4dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/ubah_state"
+        app:itemTextColor="@drawable/ubah_state"
+        app:menu="@menu/nav_menu"
+        />
+
+</RelativeLayout>

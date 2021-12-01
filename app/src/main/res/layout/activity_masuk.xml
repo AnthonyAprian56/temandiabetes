@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasukActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_art2"
+        android:scaleType = "centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:elevation="5dp"
+        android:background="@drawable/kotak_login_register">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:hintEnabled="false">
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="20"
+                android:background="#00000000"
+                android:hint="Masukkan Email"
+                android:inputType="textEmailAddress"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:boxBackgroundColor="@color/white"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="124dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="20"
+                android:textCursorDrawable="@null"
+                android:hint="Masukkan Password"
+                android:inputType="textPassword"
+                android:textStyle="italic" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/ic_password" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/calibri_bold"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/calibri_bold"
+            android:text="Kata Sandi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:text="MASUK"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="-10dp"/>
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="435dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/fuse_regular"
+            android:textStyle="italic"
+            android:text="Lupa Kata Sandi ?"
+            android:textSize="20sp" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk Dengan Facebook"
+        android:textColor="@color/white"
+        android:backgroundTint="#475A95"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk Dengan Google"
+        android:textColor="@color/white"
+        android:backgroundTint="#4C8DF5"/>
+
+    <Button
+        android:id="@+id/btnBuatAkun"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="BELUM PUNYA AKUN ? BUAT AKUN"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

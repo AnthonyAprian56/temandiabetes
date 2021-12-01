@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_list_forum"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_column="0"
+    android:layout_row="0"
+    android:layout_columnWeight="5"
+    android:layout_rowWeight="5"
+    android:layout_marginBottom="12dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="50dp"
+    android:paddingBottom="100dp"
+    android:layout_gravity="fill"
+    app:cardElevation="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="15dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/foto_profil1"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/responden"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nama_profil"
+            app:autoSizeTextType="uniform"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="14sp"
+            app:autoSizeStepGranularity="2sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/foto_profil1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="Adam Rahman"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/calibri_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/diabetesi"
+            android:padding="3dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/nama_profil"
+            android:layout_toRightOf="@id/foto_profil1"
+            android:text="Diabetesi"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@drawable/kotak_diabetesi"
+            android:textSize="18sp"
+            android:fontFamily="@font/calibri_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/judul_pertanyaan"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMinTextSize="18sp"
+            app:autoSizeStepGranularity="2sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diabetesi"
+            android:text="Olahraga Mengobati Diabetes"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="22sp"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:fontFamily="@font/calibri_bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/isi_pertanyaan"
+            android:padding="5dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMinTextSize="21sp"
+            app:autoSizeStepGranularity="2sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/judul_pertanyaan"
+            android:text="Dokter apakah benar jika kita olahraga dengan rentang waktu yang cukup lama misal bersepeda selama 2 jam
+sampai keringatan baik untuk menurunkan gula darah ?"
+            android:lineHeight="35sp"
+            android:textSize="22sp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/black"
+            android:fontFamily="@font/calibri_regular"/>
+
+
+        <RelativeLayout
+            android:id="@+id/komentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/isi_pertanyaan"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_komen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon_komen"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="Komentar"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/tandai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/isi_pertanyaan"
+            android:layout_toRightOf="@+id/komentar"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_tandai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_tandai_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon_tandai"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="Simpan"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bagikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/isi_pertanyaan"
+            android:layout_toRightOf="@+id/tandai"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_bagikan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_bagikan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon_bagikan"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="Bagikan"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

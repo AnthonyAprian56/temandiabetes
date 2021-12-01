@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_list_dokter"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#fff"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_column="0"
+    android:layout_row="0"
+    android:layout_columnWeight="5"
+    android:layout_rowWeight="5"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:padding="50dp"
+    android:layout_gravity="fill"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto_dokter"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/lemon"/>
+
+        <ImageView
+            android:id="@+id/online"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/online"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMinTextSize="17sp"
+            app:autoSizeStepGranularity="2sp"
+            android:id="@+id/nama_dokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="110dp"
+            android:text="Suwandi, SKep. Ners"
+            android:textSize="22sp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/spesialis_dokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="112dp"
+            android:text="Dokter Umum"
+            android:textSize="16sp"
+            android:textColor="#BDBDBD" />
+
+        <TextView
+            android:id="@+id/status_dokter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="110dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:lineHeight="29dp"
+            android:fontFamily="@font/calibri_bold"
+            android:text="Mohon maaf, saat ini dokter sedang tidak aktif."
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/portfolio"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/pengalaman_kerja_dokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="33dp"
+            android:text="16 Tahun"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="Tanya"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#3C9CDC"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card_list_artikel"
+    card_view:cardBackgroundColor="#fff"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="0"
+    android:layout_row="0"
+    android:layout_columnWeight="0"
+    android:layout_rowWeight="0"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="50dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="fill">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/foto_artikel"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"
+                android:outlineProvider="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gaya_hidup_sehat"
+                android:background="@drawable/kotak_artikel"
+                app:shapeAppearanceOverlay="@style/roundimageview"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/judul_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/foto_artikel"
+            android:layout_marginTop="5dp"
+            android:text="Gaya hidup sehat untuk mencegah diabetes"
+            app:autoSizeTextType="uniform"
+            android:textSize="27sp"
+            android:justificationMode="inter_word"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:fontFamily="@font/calibri_bold"
+            android:layout_alignParentRight="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto_pengarang_artikel"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lemon"
+            android:layout_toRightOf="@id/foto_artikel"
+            android:layout_marginTop="110dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            android:id="@+id/pengarang_artikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/foto_artikel"
+            android:text="Ana Yuliastanti"
+            android:fontFamily="@font/calibri_regular"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="#956666"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04-05-2021"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="#956666"
+            android:textSize="12sp"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="210dp"/>
+
+
+        <ImageButton
+            android:id="@+id/simpan_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/title_simpan"
+            android:src="@drawable/ic_baseline_bookmark_border_24"
+            android:layout_marginTop="155dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="270dp"/>
+
+        <TextView
+            android:id="@+id/title_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textColor="@color/black"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="161dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/tutup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/kotak_tutup"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutup"
+        android:layout_below="@+id/tutup"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Pilih Mekanisme Memasukkan Gula Darah "
+        android:layout_below="@+id/tutup"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/title_masukan_gula_darah"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/dnurse"
+        android:layout_below="@+id/title_masukan_gula_darah"
+        android:background="@drawable/kotak_pilih"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/gambar_dnurse"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dnurse"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/title_dnurse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gambar_dnurse"
+            android:layout_marginTop="25dp"
+            android:text="DNurse"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/desc_dnurse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_dnurse"
+            android:layout_toRightOf="@+id/gambar_dnurse"
+            android:layout_marginTop="5dp"
+            android:text="Dengan menggunakan device DNurse mellaui Jack 3.5"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/manual"
+        android:layout_below="@+id/dnurse"
+        android:background="@drawable/kotak_pilih"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/gambar_manual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/manual"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/title_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gambar_manual"
+            android:layout_marginTop="25dp"
+            android:text="Manual"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/desc_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_manual"
+            android:layout_toRightOf="@+id/gambar_manual"
+            android:layout_marginTop="5dp"
+            android:text="Masukan Data Gula Darah secara manual, input makanan dan waktu"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+</RelativeLayout>

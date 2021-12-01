@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GulaDarahActivity"
+    android:background="#EFF1FD">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_row="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kotak_buat_tambah_gula_darah"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp">
+
+                <TextView
+                    android:id="@+id/title_tanggal_masukan_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Masukan Gula Darah"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="22sp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/kotak_tanggal_gula_darah"
+                    android:layout_width="500dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@+id/title_tanggal_masukan_gula_darah"
+                    android:background="@drawable/kotak_fix">
+
+                    <EditText
+                        android:id="@+id/tanggal_gula_darah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="15 Mei 2021"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:inputType="none"
+                        android:enabled="false"
+                        android:background="@android:color/transparent"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/tanggal"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/title_jenis_pemeriksaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kotak_tanggal_gula_darah"
+                    android:text="Jenis Pemeriksaan Gula Darah"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="22sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/kotak_jenis_pemeriksaan"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@id/title_jenis_pemeriksaan"
+                    android:background="@drawable/kotak_belum_fix">
+
+                    <Spinner
+                        android:id="@+id/jenis_pemeriksaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/jenis_pemeriksaan"
+                        android:layout_marginLeft="10dp"
+                        android:theme="@style/mySpinnerItemStyle"/>
+
+                    <!-- Fake TextView to use to set in an error state to allow an error to be shown for the TextView -->
+                    <android.widget.TextView
+                        android:id="@+id/tvInvisibleError"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignRight="@+id/jenis_pemeriksaan"
+                        android:layout_alignBottom="@+id/jenis_pemeriksaan"
+                        android:layout_marginTop="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="50dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kotak_jenis_pemeriksaan"
+                    android:text="Masukan Waktu"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="22sp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/kotak_waktu"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/title_waktu"
+                    android:background="@drawable/kotak_belum_fix">
+
+                    <TextView
+                        android:id="@+id/waktu_gula_darah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="27sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/calibri_regular"
+                        android:hint="Masukan Waktu"
+                        android:clickable="true"
+                        android:background="@android:color/transparent"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_time"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_gula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kotak_waktu"
+                    android:fontFamily="@font/calibri_bold"
+                    android:text="Masukan Gula Darah"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="22sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/kotak_gula_darah"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@id/title_gula"
+                    android:background="@drawable/kotak_belum_fix">
+
+                    <EditText
+                        android:id="@+id/gula_darah1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Contoh (160) mm/hg"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="27sp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_makan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kotak_gula_darah"
+                    android:fontFamily="@font/calibri_bold"
+                    android:text="Apa Makan Malam anda sebelumnya?"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/kotak_makan"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@id/title_makan"
+                    android:background="@drawable/kotak_belum_fix">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/makan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Silahkan isi makanan anda"
+                        android:fontFamily="@font/calibri_regular"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:textSize="27sp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_snack_makan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kotak_makan"
+                    android:fontFamily="@font/calibri_bold"
+                    android:text="Apa Snack Makan anda sebelumnya?"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/kotak_snack_makan"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/title_snack_makan"
+                    android:background="@drawable/kotak_belum_fix">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/snack_makan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Boleh dikosongkan (-)"
+                        android:fontFamily="@font/calibri_regular"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:textSize="27sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/selesai_tambah_gula_darah"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="SELESAI"
+        android:fontFamily="@font/calibri_bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#EF434F"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/icon_tanggal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/tanggal"/>
+
+    <RelativeLayout
+        android:id="@+id/tanggal_waktu_olahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_tanggal"
+        android:layout_alignTop="@id/icon_tanggal"
+        android:layout_marginTop="7dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tanggal_input_olahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Rabu 12 Mei 2021"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/di"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tanggal_input_olahraga"
+            android:layout_marginRight="4dp"
+            android:text="di Jam"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/waktu_input_olahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/di"
+            android:text="12:00"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_olahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Olahraga"
+        android:layout_below="@+id/icon_tanggal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_olahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_olahraga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingHorizontal="30dp"
+        android:background="@drawable/kotak_alert">
+        <Spinner
+            android:id="@+id/edit_olahraga"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/mySpinnerItemStyle"
+            android:entries="@array/Olahraga"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/text_olahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_olahraga"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/btn_simpan_olahraga"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_olahraga"
+        android:text="SIMPAN"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/calibri_bold"/>
+</RelativeLayout>

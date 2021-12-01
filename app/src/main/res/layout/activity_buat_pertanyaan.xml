@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatPertanyaanActivity"
+    android:background="#EFF1FD">
+
+
+    <RelativeLayout
+        android:id="@+id/profil_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/buat_tanya_foto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/buat_tanya_nama"
+            android:layout_toRightOf="@+id/buat_tanya_foto"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Nama"
+            android:fontFamily="@font/calibri_regular"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_kirim"
+        android:layout_below="@+id/profil_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="20dp"
+        android:background="#FFFFFF"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/text_tipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih tipe dan kategori"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/calibri_bold"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/tipe_pertanyaan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text_tipe"
+            android:textSize="20sp"
+            android:fontFamily="@font/calibri_bold"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:entries="@array/TipePertanyaan"
+            android:theme="@style/mySpinnerItemStyle2"
+            />
+
+        <!-- Fake TextView to use to set in an error state to allow an error to be shown for the TextView -->
+        <android.widget.TextView
+            android:id="@+id/tvInvisibleError"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignRight="@+id/tipe_pertanyaan"
+            android:layout_alignBottom="@+id/tipe_pertanyaan"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <Spinner
+            android:id="@+id/kategori_pertanyaan"
+            android:layout_toRightOf="@+id/tipe_pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/text_tipe"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/calibri_bold"
+            android:textColor="@color/black"
+            android:entries="@array/KategoriPertanyaan"
+            android:theme="@style/mySpinnerItemStyle2"
+            />
+
+        <!-- Fake TextView to use to set in an error state to allow an error to be shown for the TextView -->
+        <android.widget.TextView
+            android:id="@+id/tvInvisibleError2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignRight="@+id/kategori_pertanyaan"
+            android:layout_alignBottom="@+id/kategori_pertanyaan"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="50dp"
+        android:layout_below="@+id/layout_kirim"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/input_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Masukkan judul pertanyaan"
+            android:fontFamily="@font/calibri_bold"
+            android:textSize="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_judul"
+            app:counterEnabled="true"
+            app:counterMaxLength="120"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="none">
+
+                <EditText
+                    android:id="@+id/buat_tanya_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="Judul Pertanyaan"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:lines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_isi"
+        android:layout_below="@+id/layout_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="50dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/input_isi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Masukkan Isi Pertanyaan"
+            android:fontFamily="@font/calibri_bold"
+            android:textSize="16dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_isi"
+            app:counterEnabled="true"
+            app:counterMaxLength="400"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="none">
+
+            <EditText
+                android:id="@+id/buat_tanya_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:hint="Isi Pertanyaan"
+                android:textSize="22sp"
+                android:fontFamily="@font/calibri_regular"
+                android:lines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_kirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:textStyle="bold"
+        android:paddingHorizontal="50sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/calibri_bold"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

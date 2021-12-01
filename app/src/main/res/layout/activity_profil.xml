@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity"
+    android:background="#EFF1FD">
+
+    <!-- Toolbar Teman Diabetes -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <!-- Navigasi Bawah / Bottom Navigation Bar -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_row="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_marginTop="56dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/foto_profil2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/user" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeMaxTextSize="20sp"
+                android:maxLines="1"
+                android:id="@+id/nama_profile_lengkap"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="160dp"
+                android:text="-"
+                android:textColor="#F4E4E5"
+                android:fontFamily="@font/fuse_regular" />
+
+            <TextView
+                android:id="@+id/txt_profile_NoTelp"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginLeft="160dp"
+                android:text="No.Telp: -"
+                android:textColor="#F4E4E5"
+                android:textSize="16sp"
+                android:fontFamily="@font/fuse_regular" />
+
+            <TextView
+                android:id="@+id/txt_profile_email"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="137dp"
+                android:layout_marginLeft="160dp"
+                android:text="Email: -"
+                android:textColor="#F4E4E5"
+                android:textSize="16sp"
+                android:fontFamily="@font/fuse_regular" />
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="185dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentLeft="true"
+                android:columnCount="2"
+                android:rowCount="2">
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ubah_profil"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="372dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profil Ku"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ubah Profil Ku"
+                            android:textColor="#F59D7C"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="310dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:id="@+id/pertanyaan_diskusi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/pertanyaan_forum"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pertanyaan Diskusi"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="11sp"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="50dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/qr_code"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Show QR Code"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="13sp"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="50dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginLeft="200dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/kelola"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kelola"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="16sp"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="50dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="87dp"
+                    android:layout_height="120dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginLeft="285dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/inner_circle"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inner Circle"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="50dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+
+            <TextView
+                android:id="@+id/text_profile_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terakhir di perbarui: Mei 02, 2020"
+                android:textColor="#FDBFC3"
+                android:fontFamily="@font/fuse_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400dp"/>
+
+            <TextView
+                android:id="@+id/text_profile_gulaDarah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="490dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gula Darah"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="550dp"/>
+
+
+            <TextView
+                android:id="@+id/text_profile_berat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="500dp"/>
+
+            <TextView
+                android:id="@+id/strip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="500dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="550dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:id="@+id/txt_profile_usia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="500dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usia"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="550dp"
+                android:layout_marginLeft="40dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_profile_tipeUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes type 1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="660dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_profile_sistolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="130"
+                android:layout_toLeftOf="@+id/strip2"
+                android:layout_marginTop="660dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/strip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/text_profile_diastolic"
+                android:layout_marginTop="660dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_profile_diastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="660dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_profile_hba1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.70 %"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="660dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/fuse_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipe User"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="700dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tensi"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="700dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HbA1C"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="700dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="740dp"/>
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="820dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:elevation="40dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:columnCount="1"
+                android:rowCount="8">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_asuransi"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/asuransi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Asuransi"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:id="@+id/card_ajak_teman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/berbagi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ajak Teman"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/about"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pilihan Topik"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/faq"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FAQ"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:id="@+id/card_tentang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/tentang"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tentang"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:id="@+id/card_kebijakan_privasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="0.2dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kebijakan"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kebijakan Privasi"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="70dp"
+                    app:cardElevation="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/logout"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keluar dari Akun"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="24dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"/>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:elevation="4dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/ubah_state"
+        app:itemTextColor="@drawable/ubah_state"
+        app:menu="@menu/nav_menu" />
+
+
+
+</RelativeLayout>

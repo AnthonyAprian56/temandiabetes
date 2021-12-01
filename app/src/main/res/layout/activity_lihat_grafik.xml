@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatGrafikActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_row="0">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/icon_kembali_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20sp"
+                        android:src="@drawable/back"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kembali"
+                        android:layout_below="@+id/back"
+                        android:layout_marginLeft="50dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/logo_temanDiabetes"
+                    android:layout_width="500dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo_temandiabets"/>
+
+            <RelativeLayout
+                android:id="@+id/data_diri_grafik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_temanDiabetes"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/kotak_lihat_grafik2">
+
+
+                <TextView
+                    android:id="@+id/txt_nama_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama                                  :"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <TextView
+                    android:id="@+id/nama_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_nama_grafik"
+                    android:layout_marginBottom="10dp"
+                    android:text="Responden 1234567"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <TextView
+                    android:id="@+id/txt_email_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_nama_grafik"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email                                   :"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <TextView
+                    android:id="@+id/email_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_nama_grafik"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/nama_grafik"
+                    android:text="Responden1234567@gmail.com"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+
+                <TextView
+                    android:id="@+id/txt_tipe_user_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_email_grafik"
+                    android:layout_marginBottom="10dp"
+                    android:text="Tipe User                            :"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <TextView
+                    android:id="@+id/tipe_user_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_tipe_user_grafik"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/email_grafik"
+                    android:text="Diatbetes Tipe Satu (I)"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_regular" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tanggal_grafik"
+                android:layout_below="@+id/data_diri_grafik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:paddingVertical="20sp"
+                android:paddingHorizontal="20sp"
+                android:background="@drawable/kotak_lihat_grafik2">
+
+                <TextView
+                    android:id="@+id/pilih_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="Silahkan Pilih Tanggal Gula Darah"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/tanggal_awal"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/kotak_lihat_grafik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilih_tanggal"
+                    android:hint="Pilih tanggal dari"
+                    android:inputType="date"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"/>
+
+
+                <TextView
+                    android:id="@+id/ke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="15dp"
+                    android:layout_below="@+id/pilih_tanggal"
+                    android:layout_toRightOf="@+id/tanggal_awal"
+                    android:text="ke"
+                    android:inputType="date"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:background="@drawable/kotak_ke"/>
+
+                <TextView
+                    android:id="@+id/tanggal_akhir"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/kotak_lihat_grafik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilih_tanggal"
+                    android:layout_toRightOf="@+id/ke"
+                    android:layout_marginRight="20sp"
+                    android:focusable="false"
+                    android:hint="Pilih tanggal ke"
+                    android:inputType="date"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_tampilkan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilih_tanggal"
+                    android:layout_toRightOf="@+id/tanggal_akhir"
+                    android:layout_marginTop="-6dp"
+                    android:text="Tampilkan"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:cornerRadius="10dp"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/kotak_tanggal1"
+                android:layout_below="@+id/tanggal_grafik"
+                android:background="@drawable/kotak_tanggal1"
+                android:text="Jumat, 12 Nov 21"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/calibri_bold"
+                android:visibility="invisible"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/kotak_tanggal2"
+                android:layout_below="@+id/tanggal_grafik"
+                android:layout_toRightOf="@+id/kotak_tanggal1"
+                android:background="@drawable/kotak_tanggal2"
+                android:text="Sabtu, 13 Nov 21"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                android:textColor="@color/red_td"
+                android:fontFamily="@font/calibri_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/kotak_tanggal3"
+                android:layout_below="@+id/tanggal_grafik"
+                android:layout_toRightOf="@+id/kotak_tanggal2"
+                android:background="@drawable/kotak_tanggal3"
+                android:text="Minggu, 14 Nov 21"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/calibri_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/kotak_tanggal4"
+                android:layout_below="@+id/tanggal_grafik"
+                android:layout_toRightOf="@+id/kotak_tanggal3"
+                android:background="@drawable/kotak_tanggal4"
+                android:text="Senin, 15 Nov 21"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/calibri_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tanggal_grafik"
+                android:background="@drawable/kotak_lihat_grafik2">
+
+
+                <ImageView
+                    android:id="@+id/gambar_grafik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grafik1"
+                    android:layout_marginTop="-112dp"
+                    android:layout_marginLeft="-15dp"
+                    />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/grafik_gula_darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <!-- <TextView
+                    android:id="@+id/berhasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berhasil"
+                    android:textSize="40sp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible"/>
+                    -->
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/grafik_gula_darah"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/pedi"/>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

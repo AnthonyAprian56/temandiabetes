@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".UbahProfilActivity">
+
+    <TextView
+        android:id="@+id/title_nama_lengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Nama Lengkap"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <EditText
+        android:id="@+id/edit_nama_lengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_nama_lengkap"
+        android:ems="30"
+        android:textSize="16sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/title_tanggal_lahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edit_nama_lengkap"
+        android:text="Tanggal Lahir"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <EditText
+        android:id="@+id/edit_tanggal_lahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_tanggal_lahir"
+        android:ems="30"
+        android:textSize="16sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/title_no_telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edit_tanggal_lahir"
+        android:text="No Telp"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <EditText
+        android:id="@+id/edit_no_telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:layout_below="@+id/title_no_telp"
+        android:ems="30"
+        android:textSize="16sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/title_jenis_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edit_no_telp"
+        android:text="Jenis Kelamin"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <Spinner
+        android:id="@+id/spinner_jenis_kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_jenis_kelamin"
+        android:ems="30"
+        android:textSize="30sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:entries="@array/JenisKelamin"/>
+
+    <TextView
+        android:id="@+id/title_tipe_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/spinner_jenis_kelamin"
+        android:text="Tipe User"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <Spinner
+        android:id="@+id/spinner_tipe_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_tipe_user"
+        android:ems="30"
+        android:textSize="30sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:entries="@array/TipeUser"/>
+
+    <TextView
+        android:id="@+id/title_jenis_diabetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/spinner_tipe_user"
+        android:text="Jenis Diabetes"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <Spinner
+        android:id="@+id/spinner_jenis_diabetes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_jenis_diabetes"
+        android:ems="30"
+        android:textSize="30sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:entries="@array/JenisDiabetes"/>
+
+    <TextView
+        android:id="@+id/title_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/spinner_jenis_diabetes"
+        android:text="Alamat"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="14sp"
+        android:textColor="#B2B7C0"/>
+
+    <EditText
+        android:id="@+id/edit_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title_alamat"
+        android:ems="30"
+        android:textSize="16sp"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/black"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/simpan_profil"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

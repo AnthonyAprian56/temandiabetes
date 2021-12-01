@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonsultasiActivity"
+    android:background="#EFF1FD">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Konsultasi Online Teman Diabetes"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fuse_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Silahkan pilih konsultasi online dibawah ini sesuai dengan kebutuhan Anda, kapanpun, dan dimanapun."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineHeight="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fuse_regular"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp"
+                android:columnCount="1"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/tanyadokter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="fill"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="270dp"
+                            android:src="@drawable/tanya_dokter"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="80dp"
+                            android:text="Tanya Dokter"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_bold"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginLeft="82dp"
+                            android:text="Dokter Umum dan spesialis penyakit dalam"
+                            android:justificationMode="inter_word"
+                            android:lineHeight="20dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/fuse_regular" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/tanyaedukator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="fill"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="270dp"
+                            android:src="@drawable/edukator_diabetes"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text="Tanya Edukator Diabetes"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="82dp"
+                            android:text="Dapatkan edukasi seputar perawatan diabetes dari edukator bersertifikasi PEDI"
+                            android:justificationMode="inter_word"
+                            android:lineHeight="20dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/fuse_regular" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/tanyadietisen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="fill"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="272dp"
+                            android:src="@drawable/dietisen"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="80dp"
+                            android:text="Tanya Dietisen"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="82dp"
+                            android:text="Diskusikan hal terkait nutrisi dan perencenaan makanan dengan dietisien bersertifikasi PEDI"
+                            android:justificationMode="inter_word"
+                            android:lineHeight="20dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/fuse_regular" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="7dp"
+                android:background="#DFDFDF"/>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardBackgroundColor="#fff"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/riwayatkonsultasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_columnWeight="0"
+                    android:layout_rowWeight="0"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="fill"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="15dp"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_marginRight="260dp"
+                            android:src="@drawable/history"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="80dp"
+                            android:text="Riwayat Konsultasi"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginLeft="80dp"
+                            android:text="Percakapan yang sudah pernah dilakukan dengan dokter, edukator diabetes, dan dietisen."
+                            android:justificationMode="inter_word"
+                            android:lineHeight="20dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/fuse_regular" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!-- Navigasi Bawah / Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:elevation="4dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/ubah_state"
+        app:itemTextColor="@drawable/ubah_state"
+        app:menu="@menu/nav_menu"
+        />
+
+
+</RelativeLayout>

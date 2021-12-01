@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.temandiabetes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Teman Diabetes"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Temandiabetes">
+        <activity android:name=".KomplikasiActivity" android:parentActivityName=".KategoriEdukasiActivity"></activity>
+        <activity android:name=".PengelolaanActivity" android:parentActivityName=".KategoriEdukasiActivity"/>
+        <activity android:name=".KategoriEdukasiActivity" android:parentActivityName=".EdukasiActivity"/>
+        <activity
+            android:name=".DokterUmumActivity"
+            android:parentActivityName=".KategoriDokterActivity" />
+        <activity
+            android:name=".PenyakitDalamActivity"
+            android:parentActivityName=".KategoriDokterActivity" />
+        <activity
+            android:name=".KategoriDokterActivity"
+            android:parentActivityName=".KonsultasiActivity" />
+        <activity android:name=".CostumMarkerView" />
+        <activity android:name=".MarkerViewActivity" />
+        <activity
+            android:name=".ShowEdukasiActivity"
+            android:parentActivityName=".EdukasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EdukasiActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PertanyaanForumActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuatPertanyaanActivity"
+            android:parentActivityName=".DiskusiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LihatGrafikActivity"
+            android:parentActivityName=".RekamanActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RiwayatGulaDarahActivity"
+            android:parentActivityName=".RekamanActivity" />
+        <activity
+            android:name=".GulaDarahActivity"
+            android:parentActivityName=".RekamanActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UbahProfilActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowArtikelActivity"
+            android:parentActivityName=".ArtikelActivity" />
+        <activity
+            android:name=".ShowDokterActivity"
+            android:parentActivityName=".TanyaEdukatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".DokterActivity"
+            android:parentActivityName=".KonsultasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".KebijakanPrivasiActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TentangActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AjakTemanActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AsuransiActivity"
+            android:parentActivityName=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuatAkunActivity"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".Obat2Activity"
+            android:parentActivityName=".BelanjaActivity" />
+        <activity
+            android:name=".Dietisen2Activity"
+            android:parentActivityName=".TanyaEdukatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".Dietisen1Activity"
+            android:parentActivityName=".TanyaEdukatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".Edukator2Activity"
+            android:parentActivityName=".TanyaEdukatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".Edukator1Activity"
+            android:parentActivityName=".TanyaEdukatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".RiwayatKonsultasiActivity"
+            android:parentActivityName=".KonsultasiActivity" />
+        <activity
+            android:name=".TanyaDietisenActivity"
+            android:parentActivityName=".KonsultasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TanyaEdukatorActivity"
+            android:parentActivityName=".KonsultasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MasukActivity"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".Obat1Activity"
+            android:parentActivityName=".BelanjaActivity" />
+        <activity
+            android:name=".PengingatActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArtikelActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DiskusiActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RekamanActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KonsultasiActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BelanjaActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArtikelSimpanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".ProfilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Temandiabetes.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/title_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Pengingat Obat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/calibri_bold"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_nama_obat"
+        android:layout_below="@+id/title_obat"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak_alert">
+
+    <AutoCompleteTextView
+        android:id="@+id/input_nama_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="masukkan nama obat"
+        android:ems="15"
+        android:background="@null"
+        android:textSize="22sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_nama_obat"
+        android:background="@drawable/kotak_alert"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/input_waktu_obat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="masukan waktu"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:background="@null"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/waktu"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:textSize="22sp"
+        android:text="12 Mei 2021"
+        android:fontFamily="@font/calibri_bold"
+        android:background="@null"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    <CheckBox
+        android:id="@+id/sebelum_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="190dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:id="@+id/txt_sebelum_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebelum Makan"
+        android:layout_toRightOf="@+id/sebelum_makan"
+        android:layout_alignTop="@+id/sebelum_makan"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+
+    <CheckBox
+        android:id="@+id/sesudah_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="190dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:id="@+id/txt_sesudah_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sesudah Makan"
+        android:layout_toRightOf="@+id/sesudah_makan"
+        android:layout_alignTop="@+id/sesudah_makan"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+    <!--<Button
+        android:id="@+id/btn_tambahkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="TAMBAHKAN"
+        android:fontFamily="@font/calibri_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>-->
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/tampil_obat"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/kotak_home"
+        android:backgroundTint="#F2F2F2">
+    </RelativeLayout> -->
+
+    <Button
+        android:id="@+id/selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:text="SELESAI"
+        android:fontFamily="@font/calibri_bold"
+        android:textSize="27sp"
+        android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>

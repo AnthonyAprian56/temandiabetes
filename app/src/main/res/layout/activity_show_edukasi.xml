@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowEdukasiActivity"
+    android:background="#FAFAFA">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/gambar_edukasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/gambar_ginjal"
+                    />
+
+
+                <TextView
+                    android:id="@+id/juduL_edukasi"
+                    android:layout_below="@+id/gambar_edukasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:text="Kerusakan Ginjal (Cuci Darah)"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/isi_edukasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_below="@+id/juduL_edukasi"
+                    android:fontFamily="@font/calibri_regular"
+                    android:lineHeight="35dp"
+                    android:justificationMode="inter_word"
+                    android:text="Diabetes termasuk salah satu penyebab uta,a gaga; ginjal. jika gula darah tidak dikontrol. Penyakit ginjal kronis yang mengarah pada gagal ginjal emmbutuhkan terapi cuci darah atau hemodialisis seumur hidup  \n\n Diabetes daoat merusak pembuluh darah arteri didalam tubuh, baik pembuluh darah besar maupun kecil. Di ginjal banyak sekali pembuluh darah kecil yang ikut rusak akibat diabetes. Karena ginjal bertugas menyaring darah, maka jika terjadi kerusakan maka satu-satunya cara adalah dengan Hemodialisi, atau transplantasi ginjal."
+                    android:textSize="22sp"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>

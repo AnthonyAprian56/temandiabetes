@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ShowArtikelActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/judul_artikel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gaya hidup sehat untuk mencegah diabetes"
+                android:justificationMode="inter_word"
+                android:maxLines="2"
+                app:autoSizeTextType="uniform"
+                android:textSize="35sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/calibri_bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uri_artikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/foto_artikel1"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/gaya_hidup_sehat"
+                android:scaleType="fitXY"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_pengarang_artikel1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lemon"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                app:autoSizeTextType="uniform"
+                android:id="@+id/pengarang_artikel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ana Yuliastanti"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="#956666"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04-05-2021"
+                android:textColor="#956666"
+                android:textSize="12sp"
+                android:layout_marginTop="365dp"
+                android:layout_marginLeft="50dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/isi_artikel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="100dp"
+                app:lineHeight="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/calibri_regular"
+                android:justificationMode="inter_word"
+                android:text="Pola hidup sehat untuk lansia berikutnya adalah membiasakan diri mengonsumsi makanan sehat agar kesehatan lansia tetap terjaga. Tak hanya itu, memiliki pola makan yang sehat dan seimbang juga baik untuk menjaga kesehatan, meningkatkan energi, hingga mencegah penyakit lansia."/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Referensi:"
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="https://hellosehat.com/lansia/tips-jaga-kesehatan-lansia-usia-60/"
+                android:lineHeight="20dp"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                app:autoSizeTextType="uniform"
+                android:maxLines="1"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

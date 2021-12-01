@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TanyaDietisenActivity"
+    android:background="#EFF1FD">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawableStart="@drawable/search2"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/kotak"
+            android:elevation="5dp"
+            android:hint="Bingung ? silahkan cari dietisen disini...."
+            android:imeOptions="actionSearch"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text="Rekomendasi Tenaga Kesehatan Lainnya"
+        android:fontFamily="@font/calibri_regular"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="140dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:id="@+id/gizi_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="290dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/edukator_gizi_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Herlina S.Gz.RD"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="92dp"
+                    android:text="EDUKATOR GIZI"
+                    android:textSize="14sp"
+                    android:textColor="#BDBDBD"
+                    android:fontFamily="@font/fuse_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="90dp"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="30dp"
+                    android:text="Mohon maaf untuk sementara ini Tenaga Kesehatan sedang tidak aktif"
+                    android:textSize="18sp"
+                    android:textColor="@color/red_td"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/portfolio"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="33dp"
+                    android:text="17 Tahun"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:text="Tanya"
+                    android:textSize="16sp"
+                    android:backgroundTint="#C4C4C4"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:id="@+id/gizi_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="15dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/foto_edukator2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="290dp"
+                    android:src="@drawable/edukator_gizi_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Nur Chajatie, S.Gz, MKM, RD"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="92dp"
+                    android:text="EDUKATOR GIZI"
+                    android:textSize="14sp"
+                    android:textColor="#BDBDBD"
+                    android:fontFamily="@font/fuse_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="90dp"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="30dp"
+                    android:text="Mohon maaf untuk sementara ini Tenaga Kesehatan sedang tidak aktif"
+                    android:textSize="18sp"
+                    android:textColor="@color/red_td"
+                    android:fontFamily="@font/calibri_regular" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/portfolio"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="33dp"
+                    android:text="8 Tahun"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:text="Tanya"
+                    android:textSize="16sp"
+                    android:backgroundTint="#C4C4C4"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+    <!-- Navigasi Bawah / Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:elevation="4dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/ubah_state"
+        app:itemTextColor="@drawable/ubah_state"
+        app:menu="@menu/nav_menu" />
+</RelativeLayout>

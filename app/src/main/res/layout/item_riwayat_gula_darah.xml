@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_riwayat_gula_darah"
+    xmlns:card="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    card:cardBackgroundColor="#fff"
+    android:clickable="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_column="0"
+    android:layout_row="0"
+    android:layout_columnWeight="5"
+    android:layout_rowWeight="5"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:padding="50dp"
+    android:layout_gravity="fill"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="15dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+
+        <TextView
+            android:id="@+id/tanggal_input_gula_darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabu,  12 Mei 2021"
+            android:fontFamily="@font/calibri_bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/waktu_input_gula_darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="21:33"
+            android:fontFamily="@font/calibri_bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/icon_data_makanan_edit"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tanggal_input_gula_darah"
+            android:src="@drawable/data_makanan"/>
+
+        <TextView
+            android:id="@+id/title_data_makanan_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tanggal_input_gula_darah"
+            android:layout_toRightOf="@+id/icon_data_makanan_edit"
+            android:layout_marginTop="15dp"
+            android:text="Data Makanan Sudah Terisi"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="20sp"
+            android:textColor="#777A7D" />
+
+        <TextView
+            android:id="@+id/jenis_pemeriksaan_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/icon_data_makanan_edit"
+            android:layout_marginRight="10dp"
+            android:text="Bangun Tidur"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="20sp"
+            android:textColor="#777A7D" />
+
+        <TextView
+            android:id="@+id/gula_darah_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_data_makanan_edit"
+            android:layout_toRightOf="@+id/jenis_pemeriksaan_edit"
+            android:text="150mg/dl"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="20sp"
+            android:textColor="#777A7D" />
+
+        <Button
+            android:id="@+id/manual_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gula_darah_edit"
+            android:textColor="@color/white"
+            android:text="Manual"
+            android:textSize="14sp"
+            android:backgroundTint="#A2241E" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gula_darah_edit"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="Ubah"
+            android:textSize="18sp"
+            android:backgroundTint="#6C78A1" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

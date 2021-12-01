@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/icon_tanggal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/tanggal"/>
+
+    <RelativeLayout
+        android:id="@+id/tanggal_waktu_tekanan_darah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_tanggal"
+        android:layout_alignTop="@id/icon_tanggal"
+        android:layout_marginTop="7dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tanggal_input_tekanan_darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Rabu 12 Mei 2021"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/di"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tanggal_input_tekanan_darah"
+            android:layout_marginRight="4dp"
+            android:text="di Jam"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/waktu_input_tekanan_darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/di"
+            android:text="12:00"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_sistolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_tanggal"
+        android:text="Masukan Sistolic (mm/hg)"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/edit_sistolic"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:background="@drawable/kotak_alert"
+        android:inputType="number|text"
+        android:hint="contoh (120)"
+        android:textSize="30sp"
+        android:fontFamily="@font/calibri_bold"
+        android:layout_below="@+id/title_sistolic"
+        android:layout_marginBottom="30dp"
+        android:ems="20"/>
+
+    <TextView
+        android:id="@+id/title_diastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Diastolic (mm/hg)"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/edit_sistolic"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/edit_diastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/kotak_alert"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="contoh (70)"
+        android:textSize="30sp"
+        android:fontFamily="@font/calibri_bold"
+        android:layout_below="@+id/title_diastolic"
+        android:layout_marginBottom="30dp"
+        android:ems="20"/>
+
+    <Button
+        android:id="@+id/btn_simpan_tekanan_darah"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_diastolic"
+        android:text="SIMPAN"
+        android:fontFamily="@font/calibri_bold"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

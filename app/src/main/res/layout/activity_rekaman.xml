@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RekamanActivity"
+    android:background="#EFF1FD">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_row="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minggu, 16 Mei 2021"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:background="@drawable/kotak"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="110dp"
+                android:paddingRight="110dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/bar_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#262C68"
+                android:padding="15dp"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/title_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grafik Gula Darah "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/icon_gula_darah"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/btn_tambah_gula_darah"
+                    android:src="@drawable/gula_darah"
+                    />
+
+                <TextView
+                    android:id="@+id/gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_tambah_gula_darah"
+                    android:layout_toRightOf="@+id/icon_gula_darah"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/satuan_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_tambah_gula_darah"
+                    android:layout_toRightOf="@+id/gula_darah"
+                    android:text=" mg/dl"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/keterangan_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_tambah_gula_darah"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="33dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btn_tambah_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/title_gula_darah"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Tambah Gula Darah "
+                    android:fontFamily="@font/calibri_bold"
+                    android:backgroundTint="#EF414E"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/jenis_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gula_darah"
+                    android:layout_marginLeft="10dp"
+                    android:text="Silahkan masukan gula darah anda"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#9ACD32"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/target_gula_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jenis_gula_darah"
+                    android:layout_marginLeft="10dp"
+                    android:text="Usahakan untuk makan sehat agar gula darah terkontrol"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#8283A2"
+                    android:textSize="14sp"/>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/bar_gula_darah"
+                    android:layout_below="@+id/target_gula_darah"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/riwayat_gula_darah"
+                android:layout_width="206dp"
+                android:layout_height="50dp"
+                android:text="Riwayat Gula Darah"
+                android:background="@drawable/kotak_riwayat_gula_darah"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/calibri_bold"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/bar_chart"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"/>
+
+
+
+
+            <TextView
+                android:id="@+id/lihat_grafik"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:background="@drawable/kotak_lihat_grafik"
+                android:layout_toRightOf="@id/riwayat_gula_darah"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/calibri_bold"
+                android:text="Lihat Grafik"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/bar_chart"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/data_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/riwayat_gula_darah"
+                android:layout_marginBottom="40dp"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/kotak_data_makanan"
+                android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/icon_makanan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/data_makanan" />
+
+                    <TextView
+                        android:id="@+id/txt_data_makanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_makanan"
+                        android:layout_alignTop="@+id/icon_makanan"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Data Makanan"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/tanggal_data_makanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/txt_data_makanan"
+                        android:layout_alignTop="@+id/txt_data_makanan"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="5dp"
+                        android:text=" "
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/waktu_data_makanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tanggal_data_makanan"
+                        android:layout_alignTop="@+id/tanggal_data_makanan"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/data_makan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_data_makanan"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Makanan : "
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/isi_makan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_data_makanan"
+                        android:layout_toRightOf="@+id/data_makan"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="-"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/data_snack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data_makan"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Snack : "
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/isi_snack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data_makan"
+                        android:layout_toRightOf="@+id/data_snack"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="-"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"/>
+
+                    <TextView
+                        android:id="@+id/belum_ada_makanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belum Ada Data Makanan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_bold"
+                        android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_pendataan"
+                android:layout_below="@+id/data_makanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="#787CA1"
+                android:text="Pendataan Lain" />
+
+
+    <GridLayout
+        android:layout_below="@+id/text_pendataan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="80dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/olahraga"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/olahraga" />
+
+                <TextView
+                    android:id="@+id/txt_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/olahraga"
+                    android:layout_alignTop="@+id/olahraga"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Olahraga"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"/>
+
+                <Button
+                    android:id="@+id/ubah_olahraga"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Tambah"
+                    android:layout_alignTop="@+id/olahraga"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/jenis_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedang"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_below="@+id/ubah_olahraga"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+
+                <TextView
+                    android:id="@+id/deskripsi_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="26dp"
+                    android:layout_below="@+id/txt_olahraga"
+                    android:layout_toRightOf="@+id/jenis_olahraga"
+                    android:text="Jalan cepat, jogging, berenang, bersepeda santai."
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/belum_ada_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txt_olahraga"
+                    android:layout_marginTop="10dp"
+                    android:text="Belum ada Data"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/text_perbarui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/deskripsi_olahraga"
+                    android:text="Diperbarui pada:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/tanggal_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deskripsi_olahraga"
+                    android:layout_toRightOf="@+id/text_perbarui"
+                    android:layout_marginRight="5dp"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/waktu_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tanggal_olahraga"
+                    android:layout_below="@+id/deskripsi_olahraga"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/berat_badan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/berat_badan" />
+
+                <TextView
+                    android:id="@+id/txt_beratbadan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/berat_badan"
+                    android:layout_alignTop="@+id/berat_badan"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Berat Badan"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"/>
+
+                <Button
+                    android:id="@+id/ubah_beratbadan"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Tambah"
+                    android:layout_alignTop="@+id/berat_badan"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+                <TextView
+                    android:id="@+id/input_berat_badan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:layout_below="@+id/txt_beratbadan"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/kilogram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_berat_badan"
+                    android:text="Kilogram"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="-10dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/deskripsi_beratbadan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="28dp"
+                    android:text="Jaga berat badan Anda agar selalu ideal"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@+id/input_berat_badan"
+                    android:layout_below="@id/ubah_beratbadan"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/belum_ada_BB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txt_beratbadan"
+                    android:text="Belum ada Data"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/text_perbarui1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/deskripsi_beratbadan"
+                    android:text="Diperbarui pada:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/tanggal_beratbadan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text_perbarui1"
+                    android:layout_below="@+id/deskripsi_beratbadan"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/waktu_beratbadan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tanggal_beratbadan"
+                    android:layout_below="@+id/deskripsi_beratbadan"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/hba1c"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/hba1c" />
+
+                <TextView
+                    android:id="@+id/txt_hba1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/hba1c"
+                    android:layout_alignTop="@+id/hba1c"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="HBA1C"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+                <Button
+                    android:id="@+id/ubah_hba1c"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Tambah"
+                    android:layout_alignTop="@+id/hba1c"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+                <TextView
+                    android:id="@+id/input_hba1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.70 %"
+                    android:layout_below="@+id/txt_hba1c"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="50dp"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:layout_below="@id/input_hba1c"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="34dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/deskripsi_hba1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terapkan gaya hidup sehat dan lakukan aktivitas fisik secara teratur"
+                    android:justificationMode="inter_word"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="10dp"
+                    android:lineHeight="28dp"
+                    android:layout_below="@+id/ubah_hba1c"
+                    android:layout_toRightOf="@+id/input_hba1c"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/belum_ada_Hba1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/txt_hba1c"
+                    android:text="Belum ada Data"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/text_perbarui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/deskripsi_hba1c"
+                    android:text="Diperbarui pada:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/tanggal_hba1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deskripsi_hba1c"
+                    android:layout_toRightOf="@+id/text_perbarui2"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_columnWeight="0"
+            android:layout_rowWeight="0"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/tekanan_darah"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/tekanan_darah" />
+
+                <TextView
+                    android:id="@+id/txt_tekanan_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tekanan_darah"
+                    android:layout_alignTop="@+id/tekanan_darah"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="Tekanan Darah"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+                <Button
+                    android:id="@+id/ubah_tekanan_darah"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Tambah"
+                    android:layout_alignTop="@+id/tekanan_darah"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/calibri_bold"/>
+
+
+                <TextView
+                    android:id="@+id/input_tekanan_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tekanan_darah"
+                    android:text="120"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:layout_below="@+id/txt_tekanan_darah"
+                    android:layout_toRightOf="@+id/input_tekanan_darah"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/input_tekanan_darah2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:layout_marginRight="50dp"
+                    android:layout_below="@+id/txt_tekanan_darah"
+                    android:layout_toRightOf="@+id/or"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/satuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mm/Hg"
+                    android:layout_marginTop="-5dp"
+                    android:layout_below="@+id/input_tekanan_darah"
+                    android:layout_marginLeft="38dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/deskripsi_tekanan_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terapkan gaya hidup sehat serta konsumsi obat secara teratur"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="28dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/ubah_tekanan_darah"
+                    android:layout_toRightOf="@+id/input_tekanan_darah2"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:textColor="#596289"/>
+
+                <TextView
+                    android:id="@+id/belum_ada_tekanan_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txt_tekanan_darah"
+                    android:text="Belum ada Data"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/text_perbarui3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/deskripsi_tekanan_darah"
+                    android:text="Diperbarui pada:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+                <TextView
+                    android:id="@+id/tanggal_tekanan_darah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deskripsi_tekanan_darah"
+                    android:layout_toRightOf="@+id/text_perbarui3"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/calibri_regular"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Navigasi Bawah / Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:elevation="4dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/ubah_state"
+        app:itemTextColor="@drawable/ubah_state"
+        app:menu="@menu/nav_menu"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151093927418",
+    "project_id": "temandiabetes-96890",
+    "storage_bucket": "temandiabetes-96890.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151093927418:android:a8415975f2e47a45955843",
+        "android_client_info": {
+          "package_name": "com.example.temandiabetes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151093927418-s4mrq0lvqn6obmi1g5cmv1lmmavvb149.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsv31sjnqEdCAT7vi3bD6wv_MWjx4Tctg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151093927418-s4mrq0lvqn6obmi1g5cmv1lmmavvb149.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

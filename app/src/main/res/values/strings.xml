@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">temandiabetes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Olahraga">
+        <item>Pilih Jenis Olahraga</item>
+        <item>Ringan</item>
+        <item>Sedang</item>
+        <item>Berat</item>
+    </string-array>
+
+    <string-array name="JenisKelamin">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Laki-Laki</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="TipeUser">
+        <item>Diabetesi</item>
+        <item>Non-Diabetesi</item>
+    </string-array>
+
+    <string-array name="JenisDiabetes">
+        <item>Pilih Jenis Diabetes</item>
+        <item>Pre-Diabetes</item>
+        <item>Diabetes Type 1</item>
+        <item>Diabetes Type 2</item>
+    </string-array>
+
+    <string-array name="jenis_pemeriksaan">
+        <item>Pilih Jenis Gula Darah</item>
+        <item>Bangun Tidur</item>
+        <item>1-2 Jam Setelah Sarapan</item>
+        <item>Sebelum Makan Siang</item>
+        <item>1-2 Jam Setelah Makan Siang</item>
+        <item>Sebelum Makan Malam</item>
+        <item>1-2 Jam Setelah Makan Malam</item>
+        <item>Sebelum Tidur</item>
+    </string-array>
+
+    <string-array name="TipePertanyaan">
+        <item>Tipe</item>
+        <item>Berbagi</item>
+        <item>Pertanyaan</item>
+    </string-array>
+
+    <string-array name="KategoriPertanyaan">
+        <item>Kategori</item>
+        <item>Gula Darah</item>
+        <item>Pengobatan Insulin</item>
+        <item>Mengenal Diabetes</item>
+        <item>Diabetes Gestasional</item>
+        <item>Hidup Sehat</item>
+    </string-array>
+
+    <string-array name="makanan">
+        <item>Nasi Kebuli</item>
+        <item>Nasi Telur</item>
+        <item>Nasi Goreng</item>
+        <item>Nasi Kuning</item>
+        <item>Nasi Ayam Goreng</item>
+        <item>Nasi Telur</item>
+        <item>Mie Goreng</item>
+        <item>Mie Kuah</item>
+        <item>Soto</item>
+        <item>Nasi Ikan Goreng</item>
+    </string-array>
+
+    <string-array name="snack_makan">
+        <item>Buah</item>
+        <item>Kue Kering</item>
+        <item>Roti</item>
+        <item>Kue Basah</item>
+        <item>Kacang-kacangan</item>
+        <item>Biji-bijian</item>
+        <item>Dark Chocolate</item>
+        <item>Yogurt</item>
+    </string-array>
+
+    <string-array name="obat">
+        <item>Insulin</item>
+        <item>Gliptin</item>
+        <item>Metformin (biguanid)</item>
+        <item>Sulfonilurea</item>
+        <item>Chlorpropamide</item>
+        <item>Glyburide</item>
+        <item>Glipzide</item>
+        <item>Tolazamide</item>
+    </string-array>
+
+
+</resources>
